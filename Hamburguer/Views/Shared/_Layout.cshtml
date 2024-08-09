@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Hamburguer</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Hamburguer.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header class="hearder_image">
+        <div class="menu">
+            
+            <ul class="itens">
+                <li class="nav_item"> Home </li>
+                <li class="nav_item"> Menu </li>
+                <li class="nav_item"> Pages </li>
+                <li class="nav_item"> Portifolio </li>
+                <li class="nav_item"> Shop </li>
+            </ul>
+
+            <ul class="itens">
+                <li class="nav_item"> Login </li>
+                <li class="nav_item"> Register </li>
+            </ul>
+        </div>
+        <div id="hamburguer">
+            <div class="descricao_menu cores">
+                <h3 class="cores"> Try Our New</h3>
+                <h1 class="cores"> DELUXE CHHESE BURGUER </h1>
+                <p class="paragrafo cores">
+                    Treat yourself to the deluxe taste of grilled or crispy 100% 
+                    Aussie chicken breast combined with Aussie Jack Cheese, ketchup, 
+                    recipe tomato and just the right amount of onion.
+                </p>
+            </div>
+            <div id="imagem_Representacao_menu"></div>
+        </div>
+
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2024 - Hamburguer - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

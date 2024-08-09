@@ -1,0 +1,62 @@
+html {
+  font-size: 14px;
+}
+/* Menu */
+.menu{
+    display: flex;
+    justify-content: space-between;
+
+}
+.itens{
+    display: flex;
+    padding: 0;
+    list-style: none;
+}
+.nav_item{
+    padding:15px;
+    color:white
+}
+.hearder_image {
+    background-image: url("../imagem/Untitled design.png");
+    background-size: cover;
+    background-position: center; /* Centraliza a imagem no elemento */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    height: 750px;
+}
+
+#imagem_Representacao_menu {
+    background-image: url("../imagem/hamburguer-removebg-preview.png");
+    background-size: cover;
+    background-position: center; /* Centraliza a imagem no elemento */
+    background-repeat: no-repeat; 
+    height: 350px;
+    width:350px
+}
+#hamburguer{
+    display:flex;
+    justify-content: space-evenly;
+}
+.paragrafo{
+    width:480px;
+}
+.cores{
+    color:white;
+}
+@media (min-width: 768px) {
+    html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
